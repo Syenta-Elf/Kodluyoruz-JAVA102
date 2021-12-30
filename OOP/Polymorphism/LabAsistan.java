@@ -11,5 +11,11 @@ public class LabAsistan extends Asistan {
     {
         System.out.println(this.getStaffName()+" lab'a giriş yaptı.");
     }
+
+    @Override
+    public void entry()
+    {
+        System.out.println("Lab asistanı:"+this.getStaffName()+" giriş yaptı.");
+    }
     
 }

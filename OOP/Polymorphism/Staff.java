@@ -11,7 +11,7 @@ public class Staff {
     }
     public void entry()
     {
-        System.out.println(this.staffName+" giriş yaptı.");
+        System.out.println("Çalışan:"+this.staffName+" giriş yaptı.");
     }
     public void exit()
     {
@@ -38,5 +38,11 @@ public class Staff {
     }
     public void setStaffEmail(String staffEmail) {
         this.staffEmail = staffEmail;
+    }
+    public static void caliasanGiris(Staff[] staffs)
+    {
+        for (Staff staff : staffs) {
+                staff.entry();
+        }
     }
 }

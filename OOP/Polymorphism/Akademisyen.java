@@ -14,5 +14,11 @@ public class Akademisyen extends Staff{
     {
         System.out.println(this.getStaffName()+" derse giriş yaptı.");
     }
+
+    @Override
+    public void entry()
+    {
+        System.out.println("Akademisyen:"+this.getStaffName()+" giriş yaptı.");
+    }
         
 }
