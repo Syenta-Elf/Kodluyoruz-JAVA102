@@ -10,5 +10,14 @@ public class BilgiIslem extends Memur {
     {
         System.err.println(this.getStaffName()+" network kuruyor.");
     }
-    
+    @Override
+    public  void calis()
+    {
+        System.out.println("Bilgi işlem: "+this.getStaffName()+" calisiyor.");
+    }
+    @Override
+    public void entry()
+    {
+        System.out.println("Bilgi İşlem: "+this.getStaffName()+" giriş yaptı.");
+    }
 }

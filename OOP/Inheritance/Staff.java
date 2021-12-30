@@ -1,4 +1,4 @@
-public class Staff {
+public abstract class Staff {
     private String staffName;
     private String staffPhone;
     private String staffEmail;
@@ -9,10 +9,8 @@ public class Staff {
         this.staffPhone = staffPhone;
         this.staffEmail = staffEmail;
     }
-    public void entry()
-    {
-        System.out.println(this.staffName+" giriş yaptı.");
-    }
+    public abstract void entry();
+   
     public void exit()
     {
         System.out.println(this.staffName + "çıkış yaptı.");

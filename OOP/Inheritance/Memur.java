@@ -1,4 +1,4 @@
-public class Memur extends Staff {
+public abstract class Memur extends Staff {
 
     private String departman;
     private String mesai;
@@ -9,9 +9,6 @@ public class Memur extends Staff {
         //TODO Auto-generated constructor stub
     }
 
-    public void calis()
-    {
-        System.out.println(this.getStaffName()+"calisiyor.");
-    }
+    public abstract void calis();
     
 }

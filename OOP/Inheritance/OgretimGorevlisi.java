@@ -16,4 +16,14 @@ public class OgretimGorevlisi extends Akademisyen {
     {
         System.out.println(this.getStaffName()+" sinav yapiyor.");
     }
+    @Override
+    public void derseGir()
+    {
+        System.out.println("Ogretim gorevlisi: "+this.getStaffName()+" derse girer.");
+    }
+    @Override
+    public void entry()
+    {
+        System.out.println("Öğretim görevlisi: "+this.getStaffName()+" giriş yaptı.");
+    }
 }

@@ -1,5 +1,5 @@
 
-public class Akademisyen extends Staff{
+public abstract class Akademisyen extends Staff{
 
     private String bolum;
     private String unvan;
@@ -10,9 +10,6 @@ public class Akademisyen extends Staff{
         this.unvan = unvan;
     }
     
-    public void derseGir()
-    {
-        System.out.println(this.getStaffName()+" derse giriş yaptı.");
-    }
-        
+    public abstract void derseGir();
+     
 }
