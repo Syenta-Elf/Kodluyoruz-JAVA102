@@ -16,4 +16,9 @@ public class Asistan extends Akademisyen {
     {
         System.out.println("Asistan: "+this.getStaffName()+" derse girer.");
     }
+    @Override
+    public void entry()
+    {
+        System.out.println("Asistan: "+this.getStaffName()+" giriş yaptı.");
+    }
 }
