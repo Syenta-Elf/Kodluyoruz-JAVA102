@@ -8,5 +8,7 @@ public class Main {
 
         Out.In oi = out.getIn();
         //oi.run();
+        Locale locale = new Locale();
+        locale.run();
     }
 }
