@@ -7,7 +7,6 @@ public class Main {
         // outIn.run();
 
         Out.In oi = out.getIn();
-        oi.run();
-        
+        //oi.run();
     }
 }
