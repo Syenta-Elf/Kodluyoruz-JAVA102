@@ -8,5 +8,6 @@ public class Main {
         System.out.println(c+b+a);
 
         System.out.println(Integer.parseInt(a)+b);
+        
     }    
 }
