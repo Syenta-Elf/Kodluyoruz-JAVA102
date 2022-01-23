@@ -1,0 +1,42 @@
+public class Test<T1,T2,T3> {
+    Test(T1 obj1,T2 obj2, T3 obj3)
+    {
+        setObj1(obj1);
+        setObj2(obj2);
+        setObj3(obj3);
+    }
+    
+    
+    private T1 obj1;
+    private T2 obj2;
+    private T3 obj3;
+
+    public T1 getObj1() {
+        return obj1;
+    }
+    public T3 getObj3() {
+        return obj3;
+    }
+    public void setObj3(T3 obj3) {
+        this.obj3 = obj3;
+    }
+    public T2 getObj2() {
+        return obj2;
+    }
+    public void setObj2(T2 obj2) {
+        this.obj2 = obj2;
+    }
+    public void setObj1(T1 obj1) {
+        this.obj1 = obj1;
+    }
+
+    public void showInfo()
+    {
+        System.out.println("T1 : "+obj1.getClass().getName());
+        System.out.println("T2 : "+obj2.getClass().getName());
+        System.out.println("T3 : "+obj3.getClass().getName());
+    }
+
+
+    
+}
