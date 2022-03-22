@@ -6,6 +6,14 @@ public abstract class CharClass {
     private int damage;
     private int health;
     private int coin;
+
+    
+    public CharClass(String charName, int damage, int health, int coin) {
+        this.charName = charName;
+        this.damage = damage;
+        this.health = health;
+        this.coin = coin;
+    }
     public String getCharName() {
         return charName;
     }
