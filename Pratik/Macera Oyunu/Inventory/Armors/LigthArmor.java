@@ -2,9 +2,8 @@ package Inventory.Armors;
 
 public class LigthArmor extends Armor{
 
-    public LigthArmor(){
-        this.setarmorDefence(1);
-        this.setartmorName("Ligth Armor");
-        this.setCost(15);
+    public LigthArmor() {
+        super("Ligth Armor", 1, 15);
+        //TODO Auto-generated constructor stub
     }
 }

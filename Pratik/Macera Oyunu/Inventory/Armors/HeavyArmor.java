@@ -1,9 +1,10 @@
 package Inventory.Armors;
 
 public class HeavyArmor extends Armor {
-    public HeavyArmor(){
-        this.setarmorDefence(5);
-        this.setartmorName("Heavy Armor");
-        this.setCost(40);
+
+    public HeavyArmor() {
+        super("Heavy Armor", 5, 40);
+        //TODO Auto-generated constructor stub
     }
+    
 }

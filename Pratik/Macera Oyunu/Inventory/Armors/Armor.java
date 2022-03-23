@@ -1,12 +1,17 @@
 package Inventory.Armors;
 
 public abstract class Armor {
-    private String artmorName;
+    private String armorName;
     private int armorDefence;
     private int cost;
 
-    public String getartmorName() {
-        return artmorName;
+    public Armor(String armorName, int armorDefence, int cost) {
+        this.armorName = armorName;
+        this.armorDefence = armorDefence;
+        this.cost = cost;
+    }
+    public String getarmorName() {
+        return armorName;
     }
     public int getCost() {
         return cost;
@@ -14,8 +19,8 @@ public abstract class Armor {
     public void setCost(int cost) {
         this.cost = cost;
     }
-    public void setartmorName(String artmorName) {
-        this.artmorName = artmorName;
+    public void setArmorName(String armorName) {
+        this.armorName = armorName;
     }
     public int getarmorDefence() {
         return armorDefence;

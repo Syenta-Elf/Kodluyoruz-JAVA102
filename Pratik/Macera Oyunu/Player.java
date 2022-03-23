@@ -8,12 +8,15 @@ import Characters.Samurai;
 import Inventory.Inventory;
 
 public class Player {
+    Location location = null;
+    
     private Inventory inventory;
     private CharClass charClass;
     private String playerName;
     private int damage;
     private int health;
     private int coin;
+    Scanner sc;
 
     public void selectChar(CharClass charClass) {
 
@@ -23,7 +26,7 @@ public class Player {
         this.coin = this.charClass.getCoin();
         this.health = this.charClass.getHealth();
 
-        System.out.println("Seçtiğiniz sınıf : "+ this.charClass.getCharName());
+        System.out.println("Seçtiğiniz sınıf : " + this.charClass.getCharName());
 
     }
 
@@ -37,23 +40,55 @@ public class Player {
             System.out.println((i++) + " " + charClass.getCharName() + ": Damage " + charClass.getDamage()
                     + " : Health " + charClass.getHealth() + ": Coin " + charClass.getCoin());
         }
-        
-        Scanner sc = new Scanner(System.in);
-        while(true)
-        {
+
+        sc = new Scanner(System.in);
+        while (true) {
             try {
                 System.out.println("Karakter seçin :");
                 selectChar(charClasses.get(sc.nextInt()));
-                
                 break;
             } catch (Exception e) {
                 System.out.println("Hatali giriş. Tekrar deneyin.");
+                sc.next();
                 continue;
             }
         }
-        sc.close();
-        
 
+    }
+
+    public void selectLoc() {
+        
+        
+        
+        
+        while(this.getHealth()>0){
+            System.out.println("Bölgeler:");
+            System.out.println("1-Güvenli Ev");
+            System.out.println("2-Market");
+            System.out.print("Seçiniz:");
+            
+            int selectLoc = sc.nextInt();
+            switch (selectLoc) {
+                case 1:
+                    location = new SafeHouse(this);
+                    location.onLocation();
+                    break;
+                case 2:
+                    location = new ToolStore(this);
+                    location.onLocation();
+                    break;
+            
+                default:
+                    break;
+            }
+        }
+
+    }
+
+    private void error() {
+        System.out.println("Hatalı giriş, tekrar deneyin.");
+        sc.next();
+        System.out.print("Seçiniz:");
     }
 
     public int getCoin() {

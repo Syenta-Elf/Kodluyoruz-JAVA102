@@ -1,3 +1,8 @@
+package Inventory;
+
+import Inventory.Armors.Armor;
+import Inventory.Weapons.Weapon;
+
 public class Inventory {
     private boolean water;
     private boolean food;
