@@ -7,6 +7,5 @@ public class Snake extends Obstacle {
     Snake() {
         super(damage, 12, 0, "Yılan");
         
-        //TODO Auto-generated constructor stub
     } 
 }

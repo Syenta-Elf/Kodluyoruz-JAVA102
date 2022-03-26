@@ -65,7 +65,6 @@ public class ToolStore extends NormalLoc {
 
     public void buy() {
         int id;
-        SafeHouse firstHealth = new SafeHouse(player);
         System.out.println("Paranız:"+this.player.getCoin());
         System.out.println("1-Zırh satın al");
         System.out.println("2-Silah satın al");
@@ -81,16 +80,16 @@ public class ToolStore extends NormalLoc {
 
                     if (this.armor == null) {
                         this.armor = this.armors.get(id);
-                        firstHealth.setFirstHealth(armors.get(id).getarmorDefence());
+                        SafeHouse.setFirstHealth(armors.get(id).getarmorDefence());
                         this.getPlayer().setHealth(this.getPlayer().getHealth() + this.armor.getarmorDefence());
                         this.armors.remove(id);
                     } else {
-                        firstHealth.setFirstHealth(-armors.get(id).getarmorDefence());
+                        SafeHouse.setFirstHealth(-armors.get(id).getarmorDefence());
                         this.getPlayer().setHealth(this.getPlayer().getHealth() - this.armor.getarmorDefence());
                         this.armors.add(this.armor);
                         this.armor = this.armors.get(id);
                         this.armors.remove(this.armor);
-                        firstHealth.setFirstHealth(armors.get(id).getarmorDefence());
+                        SafeHouse.setFirstHealth(armors.get(id).getarmorDefence());
                         this.getPlayer().setHealth(this.getPlayer().getHealth() - this.armor.getarmorDefence());
                     }
 
