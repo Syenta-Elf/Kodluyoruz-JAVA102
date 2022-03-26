@@ -3,6 +3,6 @@ package Characters;
 public class Knight extends CharClass{
 
     public Knight() {
-        super("Knight", 8, 24, 5);
+        super("Şövalye", 8, 24, 5);
     }
 }

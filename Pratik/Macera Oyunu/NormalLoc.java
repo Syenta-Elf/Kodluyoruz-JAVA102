@@ -1,3 +1,4 @@
+
 public class NormalLoc extends Location {
 
     public NormalLoc(Player player, String string) {

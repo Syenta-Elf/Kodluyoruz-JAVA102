@@ -11,9 +11,5 @@ public class Game {
         player.selectCharList();
         player.selectLoc();
         
-        
-        
-        
-
     }
 }

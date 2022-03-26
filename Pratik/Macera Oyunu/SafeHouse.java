@@ -1,15 +1,14 @@
+
 public class SafeHouse extends NormalLoc{
     static private int firstHealth=0;
 
     public SafeHouse(Player player) {
         super(player,"Güvenli ev");
-        //TODO Auto-generated constructor stub
+        
     }
 
     @Override
     public boolean onLocation() {
-
-        
 
         if(firstHealth==0){
             firstHealth = this.getPlayer().getHealth(); 
@@ -22,7 +21,8 @@ public class SafeHouse extends NormalLoc{
             
         return true;
     }
-
-    
+    public static void setFirstHealth(int armor){
+        SafeHouse.firstHealth += armor;
+    }     
     
 }
