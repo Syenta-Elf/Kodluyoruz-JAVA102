@@ -12,7 +12,6 @@ public class Mine extends BattleLoc {
     Random r = new Random();
     public Mine(Player player) {
         super(player,"Maden", new Snake());
-        //TODO Auto-generated constructor stub
     }
 
     @Override
