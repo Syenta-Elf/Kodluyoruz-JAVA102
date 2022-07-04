@@ -1,3 +1,6 @@
+package OOP.Abstraction;
+
+
 public class GuvenlikGorevlisi extends Memur {
     private String belge;
     GuvenlikGorevlisi(String staffName, String staffPhone, String staffEmail, String departman, String mesai,String belge) {

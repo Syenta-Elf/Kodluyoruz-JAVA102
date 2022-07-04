@@ -1,3 +1,6 @@
+package OOP.Abstraction;
+
+
 public class BilgiIslem extends Memur {
 
     private String gorev;

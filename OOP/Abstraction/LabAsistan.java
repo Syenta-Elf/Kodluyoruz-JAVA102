@@ -1,3 +1,7 @@
+package OOP.Abstraction;
+
+
+
 import java.sql.Date;
 
 public class LabAsistan extends Asistan {

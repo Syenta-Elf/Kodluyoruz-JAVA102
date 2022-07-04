@@ -1,3 +1,6 @@
+package OOP.Abstraction;
+
+
 public class OgretimGorevlisi extends Akademisyen {
 
     private int kapiNo;

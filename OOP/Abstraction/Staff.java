@@ -1,3 +1,6 @@
+package OOP.Abstraction;
+
+
 public class Staff {
     private String staffName;
     private String staffPhone;

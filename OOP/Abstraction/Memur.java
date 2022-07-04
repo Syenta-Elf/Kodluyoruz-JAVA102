@@ -1,3 +1,6 @@
+package OOP.Abstraction;
+
+
 public class Memur extends Staff {
 
     private String departman;

@@ -1,3 +1,6 @@
+package OOP.Abstraction;
+
+
 import java.sql.Date;
 
 public class Asistan extends Akademisyen {
