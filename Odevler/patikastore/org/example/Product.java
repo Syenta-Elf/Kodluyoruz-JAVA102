@@ -121,20 +121,7 @@ public abstract class Product {
         
         System.out.print("RAM:");
         product.setRam(sc.nextInt());
-
         return product;
-        // System.out.print("Hafıza:");
-        // product.setMemorySize(sc.nextInt());
-
-        // System.out.print("Renk id:");
-        // product.setColor(Color.byOrdinal(sc.nextInt()));
-
-        // System.out.println("Batarya Gücü:");
-        // product.setBatteryPower(sc.nextInt());
-
-        // phones.add(phone);
-
-        //showPhoneList(sc);
 
     }
 

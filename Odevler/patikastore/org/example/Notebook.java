@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Notebook extends Product {
 
-    public static List<Notebook> notebooks = new ArrayList<>();
+    private static List<Notebook> notebooks = new ArrayList<>();
     private Integer storageSize;
 
     public Notebook(){
